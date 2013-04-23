@@ -20,6 +20,12 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 
+# Shortcuts For Controlling Services
+alias redis='redis-server /usr/local/etc/redis.conf'
+alias mongodb='mongod run --config /usr/local/etc/mongod.conf'
+alias mysqld='cd /usr/local/opt/mysql ; /usr/local/opt/mysql/bin/mysqld_safe &'
+alias postgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
